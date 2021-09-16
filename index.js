@@ -35,4 +35,4 @@ bot.on("message", (payload, chat) => {
     console.log(text);
 });
 
-bot.start(4000);
+bot.start(process.env.PORT || 3000);
