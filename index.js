@@ -34,6 +34,7 @@ bot.on("message", (payload, chat) => {
     })();
     chat.say("Hey, user. I got your message!");
     const text = payload.message.text;
+    console.log(text);
 });
 
 bot.start(process.env.PORT || 3000);
