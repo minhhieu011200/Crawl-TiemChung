@@ -4,16 +4,14 @@ const queryString = require("query-string")
 const BootBot = require("bootbot");
 
 const bot = new BootBot({
-    accessToken: process.env.ACCESSTOKEN,
-    verifyToken: process.env.VERIFYTOKEN,
-    appSecret: process.env.APPSECRET
+  accessToken:
+    "EAAIA637Cv5cBALz1n7tc0LTWLXZCwIMIX0fmpY4vy22YRfbvlNVvvoMQ9nZBW1KO4i3CLZAiVQ7PZBZCutZA4VZCG5QKi2PwvwTEpQfVoHIwL6ZBu0d7ZALFb5ZCz8nw9y5N3lcUhwQwXuaJUQhxbEw7wItJSXBvIxr0NTe7ZAFnBxtbKUlJgR9zxSo",
+  verifyToken: "011200",
+  appSecret: "720686a5e99e63456ca462586e3dba01"
 });
 
-console.log(process.env.ACCESSTOKEN)
-console.log(process.env.VERIFYTOKEN)
-console.log(process.env.APPSECRET)
-
 bot.on("message", (payload, chat) => {
+        chat.say("Hey, user. I got your message!");
     var str = "Bùi Thế Minh Hiếu - 01/12/2000 - 1 - 0938576760";
     var a = str.split("-");
 
@@ -35,7 +33,7 @@ bot.on("message", (payload, chat) => {
         console.log(await page.title())
         await browser.close();
     })();
-    chat.say("Hey, user. I got your message!");
+
     const text = payload.message.text;
     console.log(text);
 });
