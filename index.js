@@ -1,5 +1,5 @@
-const puppeteer = require('puppeteer');
 require('dotenv').config();
+const puppeteer = require('puppeteer');
 const queryString = require("query-string")
 const BootBot = require("bootbot");
 
@@ -8,6 +8,10 @@ const bot = new BootBot({
     verifyToken: process.env.VERIFYTOKEN,
     appSecret: process.env.APPSECRET
 });
+
+console.log(process.env.ACCESSTOKEN)
+console.log(process.env.VERIFYTOKEN)
+console.log(process.env.APPSECRET)
 
 bot.on("message", (payload, chat) => {
     var str = "Bùi Thế Minh Hiếu - 01/12/2000 - 1 - 0938576760";
