@@ -34,8 +34,6 @@
 const puppeteer = require('puppeteer');
 const queryString = require("query-string");
 
-console.log('server running at ')
-
 var str = "Bùi Thế Minh Hiếu - 01/12/2000 - 1 - 0938576760";
 var a = str.split("-");
 
