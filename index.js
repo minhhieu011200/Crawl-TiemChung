@@ -4,10 +4,9 @@ const queryString = require("query-string")
 const BootBot = require("bootbot");
 
 const bot = new BootBot({
-    accessToken:
-        "EAAIA637Cv5cBAHHCx1E5MootwQlOqcrnu9pD8uKRmU9vaVmZC1gsHNipuqAtfyZAz8c1YkZAg3fJCKZA4y8TCoJbVi2jf4xbmnWLOB8kqCdZC1AxrPoDTenyuKbbZAX9MEaAqeZAhGvUeBYOIjB9JLfW2Md7KeKXyYhMFcdcgAEHuFPQE6LKj6B",
-    verifyToken: "011200",
-    appSecret: "720686a5e99e63456ca462586e3dba01"
+    accessToken: process.env.ACCESSTOKEN,
+    verifyToken: process.env.VERIFYTOKEN,
+    appSecret: process.env.APPSECRET
 });
 
 bot.on("message", (payload, chat) => {
