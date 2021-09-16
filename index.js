@@ -5,7 +5,7 @@ const BootBot = require("bootbot");
 
 const bot = new BootBot({
     accessToken:
-        "EAAIA637Cv5cBAP1LEbHg8TnDCI3wVWq0Wdnx3gO6hjaCURS1lGNGC3tk5neRLJaCnqdJMgpvXaFeCT6ZBP64Ivl3aOjiaKlOilk1hkAraRpF1wsuCcWzSYS5Psg9aGw6iXxEjW1ZCOZB3AYQ1INYO3preMMc0cGDPQ7VAdAyxI4ZAR2yzZCe0",
+        "EAAIA637Cv5cBAHHCx1E5MootwQlOqcrnu9pD8uKRmU9vaVmZC1gsHNipuqAtfyZAz8c1YkZAg3fJCKZA4y8TCoJbVi2jf4xbmnWLOB8kqCdZC1AxrPoDTenyuKbbZAX9MEaAqeZAhGvUeBYOIjB9JLfW2Md7KeKXyYhMFcdcgAEHuFPQE6LKj6B",
     verifyToken: "011200",
     appSecret: "720686a5e99e63456ca462586e3dba01"
 });
